@@ -18,4 +18,18 @@
   <build>
     <finalName>my-webapp</finalName>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>central</id>
+      <name>centos01-releases</name>
+      <url>http://127.0.0.1:8081/artifactory/maven1-local</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>centos01-snapshots</name>
+      <url>http://127.0.0.1:8081/artifactory/maven1-local</url>
+    </snapshotRepository>
+  </distributionManagement>
+
 </project>
